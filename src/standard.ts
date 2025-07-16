@@ -10,6 +10,7 @@ export interface StandardMerkleTreeData<T extends any[]> extends MerkleTreeData<
   leafEncoding: string[];
 }
 
+
 export class StandardMerkleTree<T extends any[]> extends MerkleTreeImpl<T> {
   protected constructor(
     protected readonly tree: HexString[],
